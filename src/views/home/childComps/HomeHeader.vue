@@ -1,6 +1,6 @@
 <template>
 	<div id="jumbotron" :style="{height:screenHeight}">
-		<div class="jumbotron">
+		<div class="jumbotron mt-3">
 			<div class="container" style="text-align: center;">
 				<div class="row">
 					<div class="col-md-12">
@@ -24,7 +24,7 @@
 
 <script>
 	export default {
-		name: "Jumbotron",
+		name: "HomeHeader",
 		data() {
 			return {
 			  screenHeight:'0px'
@@ -32,7 +32,6 @@
 		},
     created() {
       this.screenHeight=screen.availHeight-(screen.availHeight*0.25)+'px';
-      console.log(this.screenHeight);
     }
   }
 </script>
@@ -41,18 +40,5 @@
 	.logo{
 		width: 200px;
 		height: 200px;
-	}
-  #jumbotron{
-
-  }
-
-
-	@media (max-width: 576px) {
-/* 		.jumbotron-height {
-			height: 50vh;
-		}
-		.avatar img{
-			width: 100px;
-		} */
 	}
 </style>

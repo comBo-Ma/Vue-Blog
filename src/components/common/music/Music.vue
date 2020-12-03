@@ -1,6 +1,6 @@
 <template>
 	<div class="container">
-		<hr>
+		<hr class="bg-danger">
 		<h3>音乐随心听</h3>
 		<div class="row">
 			<div class="col-md-3">

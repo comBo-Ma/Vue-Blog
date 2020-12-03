@@ -2,7 +2,7 @@
   <div class="container">
     <div class="footer">
       <p>
-        <a v-for="(item,index) in footLinks" :href="item.href">{{item.name}}</a>
+        <router-link v-for="(item,index) in footLinks" :to="item.href" target="_blank">{{item.name}}</router-link>
       </p>
       <p>Copyright © 2020-2020 charon.plus All Rights Reserved </p>
       <p><a href="">陇ICP备20001946号-1</a></p>
@@ -17,10 +17,9 @@ export default {
     return{
       footLinks:[
         {name:'联系我',href:'#'},
-        {name:'常见问题',href:'#'},
         {name:'源码地址',href:'#'},
         {name:'意见反馈',href:'#'},
-        {name:'友情链接',href:'#'}
+        {name:'友情链接',href:'/friendLink'}
       ]
     }
   }
